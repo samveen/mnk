@@ -1,0 +1,5 @@
+pkg.name: "targets/mnk"
+pkg.type: "target"
+pkg.description: "My Newt Keyboard"
+pkg.author: "Samveen <samveen@samveen.in>"
+pkg.homepage: "http://keyboard.samveen.in"

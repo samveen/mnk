@@ -1,0 +1,41 @@
+syscfg.vals:
+    # Use INFO log level to reduce code size.  DEBUG is too large for nRF51.
+    LOG_LEVEL: 1
+
+    # Disable central and observer roles.
+    BLE_ROLE_BROADCASTER: 1
+    BLE_ROLE_CENTRAL: 0
+    BLE_ROLE_OBSERVER: 0
+    BLE_ROLE_PERIPHERAL: 1
+
+    STATS_NAMES: 1
+
+    # CLI & Shell
+    SHELL_TASK: 1
+    STATS_CLI: 1
+    STATS_NEWTMGR: 1
+
+    # Config with NFFS
+    CONFIG_NFFS: 1
+    CONFIG_CLI: 1
+    CONFIG_NEWTMGR: 1
+    #CONFIG_NFFS_DIR: '"/cfg"'
+    #CONFIG_NFFS_FILE: '"/cfg/run"'
+    #CONFIG_NFFS_MAX_LINES: 32
+
+    # Adafruit Util
+    ADAUTIL_CFG: 1
+
+    # Adafruit BLE DIS
+    BLEDIS_STATS: 0
+    BLEDIS_MODEL_STR: '"Bluefruit Feather nRF52"'
+    BLEDIS_SERIAL_DYNAMIC: 1
+    BLEDIS_FIRMWARE_REV_STR: '"1.1.0"'
+    BLEDIS_HARDWARE_REV_STR: NULL
+    BLEDIS_SOFTWARE_REV_STR: NULL
+    BLEDIS_MANUFACTURER_STR: '"Adafruit Industries"'
+
+    # Adafruit BLEUART
+    BLEUART_BUFSIZE: 128
+    BLEUART_CLI: 1
+    BLEUART_STATS: 1
