@@ -18,24 +18,36 @@ This repo contains the software flailings I do.
 ## Building
 
 The below procedure describes how to build this application for the
-Apache Mynewt simulator.
+Adafruit nRF52 Pro Feather. I assume Ubuntu 17.10 as build environment.
 
 1. Download and install Apache Newt.
 
 You will need to download the Apache Newt tool, as documented in the [Getting Started Guide](http://mynewt.apache.org/os/get_started/introduction/).
 
-2. Download the Apache Mynewt Core package (in the project root dir).
+2. Clone this repo somewhere.
+
+```no-highlight
+    $ git clone 'https://github.com/samveen/mnk.git'
+```
+
+3. Download the Apache Mynewt Core package (in the project root dir).
 
 ```no-highlight
     $ newt install
 ```
 
-3. Build the app
+4. Build the app
 
 ```no-highlight
-    $ newt build
+    $ newt build mnk
+```
+
+5. Profit
+
+```no-highlight
+    $ echo "$$$$$"
 ```
 
 # More background
-[Getting Started Guide](http://mynewt.apache.org/os/get_started/introduction/).
-[Adafruit nRF52 Pro Feather](https://learn.adafruit.com/adafruit-nrf52-pro-feather/overview)
+- [Getting Started Guide](http://mynewt.apache.org/os/get_started/introduction/).
+- [Adafruit nRF52 Pro Feather](https://learn.adafruit.com/adafruit-nrf52-pro-feather/overview)
