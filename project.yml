@@ -1,0 +1,16 @@
+#
+# See LICENSE file.
+#
+
+project.name: "mnk"
+project.description: "My Newt Keyboard"
+
+project.repositories:
+    - apache-mynewt-core
+
+# core ASF libraries via github
+repository.apache-mynewt-core:
+    type: github
+    vers: 1-latest
+    user: apache
+    repo: mynewt-core
