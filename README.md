@@ -22,7 +22,7 @@ Adafruit nRF52 Pro Feather. I assume Ubuntu 17.10 as build environment.
 
 1. Download and install Apache Newt.
 
-You will need to download the Apache Newt tool, as documented in the [Getting Started Guide](http://mynewt.apache.org/os/get_started/introduction/).
+You will need to download the Apache Newt tool, as documented in the [Getting Started Guide](http://mynewt.apache.org/latest/os/introduction/).
 
 2. Clone this repo somewhere.
 
@@ -49,5 +49,5 @@ You will need to download the Apache Newt tool, as documented in the [Getting St
 ```
 
 # More background
-- [Getting Started Guide](http://mynewt.apache.org/os/get_started/introduction/).
+- [Getting Started Guide](http://mynewt.apache.org/latest/os/introduction/).
 - [Adafruit nRF52 Pro Feather](https://learn.adafruit.com/adafruit-nrf52-pro-feather/overview)
