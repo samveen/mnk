@@ -41,6 +41,7 @@ void scan_keys(void) {
             matrix_left[opin][ipin] = hal_gpio_read(keyboard_input_pins_set_left[ipin]);
             matrix_right[opin][ipin] = hal_gpio_read(keyboard_input_pins_set_right[ipin]);
         }
+        hal_gpio_write(keyboard_output_pins[opin], 0);
     }
     sendkeys(matrix_left,matrix_right);
 }
