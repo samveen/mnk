@@ -210,7 +210,9 @@ int main(void)
   sysinit();
 
   /* Set initial BLE device address. */
-  memcpy(g_dev_addr, (uint8_t[6]){0xAD, 0xAF, 0xAD, 0xAF, 0xAD, 0xAF}, 6);
+  /* memcpy(g_dev_addr, (uint8_t[6]){0xAD, 0xAF, 0xAD, 0xAF, 0xAD, 0xAF}, 6); */
+  /* Copy from controller: Is this even required? */
+  /* ble_hs_id_copy_addr(BLE_ADDR_PUBLIC,&g_dev_addr,NULL); */
 
   /* Init Config & NFFS */
   adacfg_init("adafruit");
