@@ -1,3 +1,7 @@
+/*
+ * See LICENSE for details
+ */
+
 #include <assert.h>
 #include <string.h>
 #include <stdio.h>
