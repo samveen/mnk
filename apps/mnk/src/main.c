@@ -7,11 +7,11 @@
 #include <stdio.h>
 #include <errno.h>
 
+#include <os/mynewt.h>
+
 #include <bsp/bsp.h>
-#include <os/os.h>
 #include <hal/hal_gpio.h>
 
-#include <sysinit/sysinit.h>
 #include <console/console.h>
 #include <shell/shell.h>
 #include <log/log.h>
@@ -21,6 +21,8 @@
 #include <nimble/ble.h>
 #include <host/ble_hs.h>
 #include <services/gap/ble_svc_gap.h>
+#include <services/bas/ble_svc_bas.h>
+#include <services/dis/ble_svc_dis.h>
 
 /* Newtmgr include */
 #include <newtmgr/newtmgr.h>
@@ -234,6 +236,18 @@ int main(void)
 
   /* Nordic UART service (NUS) settings */
   bleuart_init();
+
+  /* BLE device information service init */
+  ble_svc_dis_model_number_set("mnk.01");
+  ble_svc_dis_serial_number_set("00000001");
+  ble_svc_dis_firmware_revision_set("0.0.1");
+  ble_svc_dis_hardware_revision_set("0.0.1");
+  ble_svc_dis_software_revision_set("0.0.1");
+  ble_svc_dis_manufacturer_name_set("samveen.in");
+  ble_svc_dis_init();
+
+  /* BLE battery service init */
+  ble_svc_bas_init();
 
   /* Set the default device name. */
   VERIFY_STATUS( ble_svc_gap_device_name_set(cfgdata.devname) );
